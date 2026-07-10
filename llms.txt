@@ -1,0 +1,25 @@
+# Get Out Now
+
+> NOTE: This site is currently a placeholder (the repository contains only a
+> README). This llms.txt describes the intended mission so AI crawlers and the
+> sibling sites have context; it will be expanded once site content is added.
+
+> Get Out Now is intended as a diaspora-relocation resource focused on the
+> Israeli Law of Return and the practical logistics of relocating ("making
+> Aliyah"), aimed at Jews and those with Jewish ancestry who are considering or
+> planning a move.
+
+## About (intended)
+
+- Focus: eligibility under the Law of Return (including the 1970 "grandchild clause"), and the practical logistics of diaspora relocation / evacuation.
+- Status: placeholder — no live content or forms yet.
+
+## Related initiatives
+
+Get Out Now is one of six independent sibling nonprofit sites:
+
+- [interfaith-sanctuary.org](https://interfaith-sanctuary.org/) — a non-denominational interfaith sanctuary.
+- [thelastdate.org](https://thelastdate.org/) — nonprofit matchmaking initiative.
+- [projectshreeram.org](https://projectshreeram.org/) — Hindu–Jewish and India–Israel relations.
+- [1in56million.org](https://1in56million.org/) — British-Israelite / genealogy research.
+- [crypto-jews.org](https://crypto-jews.org/) — Anusim / Converso community and Sephardic genealogy.
