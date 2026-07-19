@@ -1,655 +1,444 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Free Flight to Israel -- Apply Now" />
-  <title>Get Out Now ‼️</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --navy:    #0B1A2E;
-      --navy-2:  #0F2240;
-      --gold:    #C8A84B;
-      --gold-lt: #E2C97A;
-      --cream:   #F5F0E8;
-      --muted:   #8A9BB0;
-      --border:  rgba(200,168,75,0.25);
-    }
-    body {
-      background: var(--navy);
-      color: var(--cream);
-      font-family: 'Inter', sans-serif;
-      font-size: 16px;
-      line-height: 1.6;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Free point-to-point flights to Israel for Jews eligible under the Law of Return. Apply in two fields — first name and a messenger number." />
+<title>Get Out Now — Free Flight to Israel</title>
+<meta property="og:title" content="Get Out Now — Free Flight to Israel" />
+<meta property="og:description" content="Free flights home to Israel for all Diaspora Jews eligible under the Law of Return." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;900&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --night:#081525; --navy:#0B1A2E; --navy-2:#0F2240; --navy-lift:#16304f;
+  --gold:#CBA94E; --gold-lt:#E7CE86; --gold-deep:#a5872f;
+  --cream:#F5F0E4; --muted:#93A4BC; --sky:#5C8BC0;
+  --border:rgba(203,169,78,0.22);
+  --maxw:1080px;
+}
+html{scroll-behavior:smooth}
+body{
+  background:var(--night); color:var(--cream);
+  font-family:'Rubik',system-ui,sans-serif; font-size:16px; line-height:1.65;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+h1,h2,h3{font-family:'Frank Ruhl Libre','Rubik',serif; line-height:1.1; font-weight:900}
+[dir="rtl"]{font-family:'Rubik',sans-serif}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(18px,5vw,40px)}
+.eyebrow{font-family:'Rubik',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;color:var(--gold)}
 
-```
-/* GET OUT NOW HEADER */
-.site-header {
-  background: var(--navy);
-  border-bottom: 1px solid var(--border);
-  padding: 14px 5vw;
-  text-align: center;
-}
-.site-header h1 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: clamp(1.4rem, 5vw, 2.2rem);
-  font-weight: 900;
-  color: var(--gold);
-  letter-spacing: 0.02em;
-}
+/* ---- ambient star field ---- */
+.stars{position:fixed;inset:0;z-index:-2;background:
+  radial-gradient(1px 1px at 20% 30%, rgba(255,255,255,.7), transparent),
+  radial-gradient(1px 1px at 70% 20%, rgba(255,255,255,.5), transparent),
+  radial-gradient(1px 1px at 40% 70%, rgba(255,255,255,.6), transparent),
+  radial-gradient(1.5px 1.5px at 85% 60%, rgba(231,206,134,.7), transparent),
+  radial-gradient(1px 1px at 55% 45%, rgba(255,255,255,.4), transparent),
+  radial-gradient(1px 1px at 15% 85%, rgba(255,255,255,.5), transparent),
+  radial-gradient(1.5px 1.5px at 90% 90%, rgba(255,255,255,.4), transparent);
+  animation:twinkle 6s ease-in-out infinite alternate}
+@keyframes twinkle{from{opacity:.55}to{opacity:1}}
+/* dawn glow rising from the horizon */
+.dawn{position:fixed;left:50%;bottom:-30vh;transform:translateX(-50%);width:140vw;height:70vh;z-index:-1;
+  background:radial-gradient(ellipse at center, rgba(203,169,78,.20) 0%, rgba(203,169,78,.06) 40%, transparent 70%);
+  animation:breathe 9s ease-in-out infinite}
+@keyframes breathe{0%,100%{opacity:.7}50%{opacity:1}}
 
-/* LANGUAGE BAR */
-.lang-bar {
-  background: var(--navy-2);
-  border-bottom: 1px solid var(--border);
-  padding: 8px 5vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-.lang-globe { font-size: 1rem; }
-.lang-select {
-  background: var(--navy);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 5px 28px 5px 10px;
-  color: var(--gold);
-  font-family: 'Inter', sans-serif;
-  font-size: 0.82rem;
-  font-weight: 500;
-  cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23C8A84B' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 9px center;
-}
-.lang-select:focus { outline: none; border-color: var(--gold); }
-.lang-select option { background: #0F2240; color: var(--cream); }
+/* ---- top bar ---- */
+.topbar{position:sticky;top:0;z-index:60;background:rgba(8,21,37,.82);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border)}
+.topbar .in{max-width:var(--maxw);margin:0 auto;padding:.7rem clamp(18px,5vw,40px);
+  display:flex;align-items:center;gap:1rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;margin-inline-end:auto}
+.brand svg{width:38px;height:38px;flex:none}
+.brand .wm{font-family:'Frank Ruhl Libre',serif;font-weight:900;font-size:1.15rem;letter-spacing:.01em;color:var(--cream)}
+.brand .wm b{color:var(--gold)}
+.langs{display:flex;gap:.2rem;flex-wrap:nowrap;overflow-x:auto}
+.lang-btn{background:transparent;border:1px solid var(--border);color:var(--muted);
+  font-family:'Rubik',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.04em;
+  padding:.32rem .5rem;border-radius:20px;cursor:pointer;transition:.15s;white-space:nowrap}
+.lang-btn:hover{color:var(--gold-lt);border-color:var(--gold)}
+.lang-btn.active{background:var(--gold);color:var(--navy);border-color:var(--gold)}
 
-/* NEWSPAPER BANNER */
-.breaking-banner {
-  background: var(--cream);
-  color: var(--navy);
-  padding: 14px 5vw 16px;
-  text-align: center;
-  border-top: 4px solid var(--navy);
-  border-bottom: 4px solid var(--navy);
-}
-.breaking-rules { display: none; }
-.breaking-headline {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: clamp(1.4rem, 5vw, 3.4rem);
-  font-weight: 900;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-  color: var(--navy);
-  text-transform: uppercase;
-  font-style: italic;
-  margin: 8px 0;
-}
+/* ---- hero ---- */
+.hero{position:relative;padding:clamp(2.4rem,7vw,5rem) 0 clamp(2rem,5vw,3.5rem);overflow:hidden}
+.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.5rem,4vw,3rem);align-items:center}
+.hero-copy .eyebrow{display:block;margin-bottom:1rem}
+.hero h1{font-size:clamp(2.1rem,6vw,3.9rem);color:var(--cream);margin-bottom:1.1rem;letter-spacing:-.01em}
+.hero h1 .em{background:linear-gradient(120deg,var(--gold-lt),var(--gold) 55%,var(--gold-deep));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero .sub{color:var(--muted);font-size:clamp(1rem,2vw,1.15rem);max-width:34ch;margin-bottom:1.8rem}
+.cta{display:inline-flex;align-items:center;gap:.6rem;background:linear-gradient(135deg,var(--gold-lt),var(--gold));
+  color:var(--navy);font-family:'Rubik',sans-serif;font-weight:700;font-size:1rem;letter-spacing:.02em;
+  text-decoration:none;padding:.95rem 1.8rem;border-radius:40px;border:none;cursor:pointer;
+  box-shadow:0 10px 30px -8px rgba(203,169,78,.5);transition:transform .18s,box-shadow .18s}
+.cta:hover{transform:translateY(-2px);box-shadow:0 16px 40px -10px rgba(203,169,78,.65)}
+.cta svg{width:20px;height:20px}
+.hero .reassure{margin-top:1rem;font-size:.82rem;color:var(--muted);display:flex;align-items:center;gap:.4rem}
+.hero .reassure svg{width:15px;height:15px;color:var(--gold)}
 
-/* FORM PAGE */
-.form-page {
-  flex: 1;
-  max-width: 600px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 40px 5vw 60px;
-}
-.form-header {
-  text-align: center;
-  margin-bottom: 32px;
-}
-.form-emojis {
-  font-size: 2rem;
-  letter-spacing: 0.2em;
-  margin-bottom: 14px;
-}
-.form-header h2 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: clamp(1.4rem, 4vw, 2.1rem);
-  font-weight: 900;
-  line-height: 1.15;
-  margin-bottom: 10px;
-  background: linear-gradient(135deg, var(--cream) 0%, var(--gold-lt) 60%, var(--gold) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.form-header p { color: var(--muted); font-size: 0.9rem; max-width: 400px; margin: 0 auto; }
-.form-header .form-notice {
-  max-width: 480px;
-  margin: 14px auto 0;
-  font-size: 0.85rem;
-  line-height: 1.55;
-  color: var(--cream);
-  background: rgba(200,168,75,0.08);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 14px 16px;
-  text-align: left;
-}
-html[dir="rtl"] .form-header .form-notice { text-align: right; }
-.form-header .form-footnote {
-  max-width: 480px;
-  margin: 8px auto 0;
-  font-size: 0.74rem;
-  line-height: 1.5;
-  color: var(--muted);
-  text-align: left;
-}
-html[dir="rtl"] .form-header .form-footnote { text-align: right; }
-.form-notice sup { color: var(--gold); }
+/* flight scene */
+.scene{position:relative;aspect-ratio:1/.9;min-height:280px}
+.scene svg{width:100%;height:100%;overflow:visible}
+.orbit{transform-origin:center;animation:spin 60s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.cloud{animation:drift 18s ease-in-out infinite alternate;opacity:.5}
+.cloud.b{animation-duration:26s;animation-delay:-6s}
+@keyframes drift{from{transform:translateX(-12px)}to{transform:translateX(18px)}}
+.dest{animation:pulseStar 3.2s ease-in-out infinite}
+@keyframes pulseStar{0%,100%{opacity:.75;transform:scale(1)}50%{opacity:1;transform:scale(1.15)}}
+.plane-g{filter:drop-shadow(0 3px 6px rgba(0,0,0,.4))}
+.float{animation:floaty 5s ease-in-out infinite}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 
-/* FORM CARD */
-.form-card {
-  background: var(--navy-2);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 32px 28px;
-  font-size: 0;
-}
-.form-card::before, .form-card::after { display: none !important; content: none !important; }
-.form-card * { font-size: revert; }
-.form-group { margin-bottom: 18px; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+/* ---- process strip ---- */
+.process{padding:clamp(1.5rem,4vw,2.5rem) 0}
+.process .rail{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;position:relative}
+.process .rail::before{content:"";position:absolute;top:34px;left:12%;right:12%;height:2px;
+  background:repeating-linear-gradient(90deg,var(--gold) 0 6px,transparent 6px 14px);opacity:.4}
+.step{text-align:center;position:relative;z-index:1}
+.step .disc{width:68px;height:68px;margin:0 auto .8rem;border-radius:50%;display:grid;place-items:center;
+  background:var(--navy-2);border:1px solid var(--border);box-shadow:0 8px 24px -10px rgba(0,0,0,.6)}
+.step .disc svg{width:30px;height:30px;color:var(--gold-lt)}
+.step .n{font-family:'Frank Ruhl Libre',serif;color:var(--gold);font-size:.8rem;letter-spacing:.15em;font-weight:700}
+.step .t{font-size:.9rem;color:var(--cream);font-weight:500;margin-top:.2rem}
 
-label {
-  display: block;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 6px;
-}
-label .req { color: #E8B4B0; margin-left: 2px; }
+/* ---- apply section ---- */
+.apply{padding:clamp(2rem,5vw,3.5rem) 0}
+.apply .head{text-align:center;max-width:640px;margin:0 auto 2rem}
+.apply .head h2{font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:.7rem;
+  background:linear-gradient(120deg,var(--cream),var(--gold-lt) 70%,var(--gold));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.apply .head p.sub{color:var(--muted);font-size:.95rem;max-width:46ch;margin:0 auto}
+.form-notice{max-width:560px;margin:1.2rem auto 0;font-size:.86rem;line-height:1.6;color:var(--cream);
+  background:rgba(203,169,78,.07);border:1px solid var(--border);border-radius:12px;padding:16px 18px;text-align:start}
+.form-notice sup{color:var(--gold)}
+.form-footnote{max-width:560px;margin:.7rem auto 0;font-size:.74rem;line-height:1.55;color:var(--muted);text-align:start}
+.form-card{max-width:560px;margin:1.8rem auto 0;background:linear-gradient(180deg,var(--navy-2),var(--navy));
+  border:1px solid var(--border);border-radius:18px;padding:clamp(22px,4vw,34px);
+  box-shadow:0 30px 70px -30px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.02) inset}
+.form-group{margin-bottom:18px}
+label{display:flex;align-items:center;gap:.45rem;font-family:'Rubik',sans-serif;font-size:.74rem;font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+label svg{width:15px;height:15px;color:var(--gold-lt)}
+label .req{color:#E8A9A2}
+input[type=text],input[type=tel],input[type=email],textarea{
+  width:100%;background:rgba(255,255,255,.045);border:1px solid var(--border);border-radius:9px;
+  padding:12px 14px;color:var(--cream);font-family:'Rubik',sans-serif;font-size:.98rem;transition:.2s;font-family:inherit}
+input::placeholder,textarea::placeholder{color:#4A5A70}
+input:focus,textarea:focus{outline:none;border-color:rgba(203,169,78,.7);box-shadow:0 0 0 3px rgba(203,169,78,.12);background:rgba(255,255,255,.06)}
+.phone-wrap{display:flex}
+.phone-prefix{background:rgba(203,169,78,.1);border:1px solid var(--border);border-inline-end:none;
+  border-radius:9px 0 0 9px;padding:0 13px;color:var(--gold);display:flex;align-items:center}
+[dir="rtl"] .phone-prefix{border-radius:0 9px 9px 0}
+.phone-wrap input{border-radius:0 9px 9px 0}
+[dir="rtl"] .phone-wrap input{border-radius:9px 0 0 9px}
+.messenger-pills{display:flex;gap:8px;flex-wrap:wrap}
+.messenger-pill{flex:1;min-width:92px;background:rgba(255,255,255,.045);border:1px solid var(--border);border-radius:9px;
+  padding:11px 8px;color:var(--cream);font-family:'Rubik',sans-serif;font-size:.86rem;font-weight:600;cursor:pointer;transition:.2s;
+  display:flex;align-items:center;justify-content:center;gap:.35rem}
+.messenger-pill svg{width:16px;height:16px}
+.messenger-pill:hover{border-color:rgba(203,169,78,.6)}
+.messenger-pill.active{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.verify-row{display:flex;align-items:center;gap:12px;margin-top:10px;flex-wrap:wrap}
+.btn-verify{background:rgba(203,169,78,.12);border:1px solid var(--gold);border-radius:8px;padding:9px 15px;
+  color:var(--gold-lt);font-family:'Rubik',sans-serif;font-size:.82rem;font-weight:600;cursor:pointer;transition:.2s;text-decoration:none;display:inline-block}
+.btn-verify:hover{background:rgba(203,169,78,.22)}
+.verify-status{font-size:.82rem;color:var(--muted)}
+.verify-status.ok{color:#7FD99A;font-weight:600}.verify-status.err{color:#E8867F;font-weight:600}
+.verify-confirm{margin-top:10px}
+.checkbox-wrap{display:flex;align-items:center;gap:8px;margin-top:9px;cursor:pointer}
+.checkbox-wrap input{width:16px;height:16px;accent-color:var(--gold);cursor:pointer;flex:none}
+.checkbox-wrap span{font-size:.82rem;color:var(--muted)}
+.btn-submit{width:100%;background:linear-gradient(135deg,var(--gold-lt),var(--gold));color:var(--navy);
+  font-family:'Rubik',sans-serif;font-weight:700;font-size:1rem;letter-spacing:.03em;text-transform:uppercase;
+  border:none;border-radius:40px;padding:15px;cursor:pointer;transition:.2s;margin-top:6px;
+  box-shadow:0 12px 30px -10px rgba(203,169,78,.5)}
+.btn-submit:hover{transform:translateY(-1px);box-shadow:0 18px 40px -12px rgba(203,169,78,.65)}
+.btn-submit:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none}
 
-input[type="text"], input[type="tel"], input[type="email"], select.field {
-  width: 100%;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  padding: 11px 13px;
-  color: var(--cream);
-  font-family: 'Inter', sans-serif;
-  font-size: 0.97rem;
-  transition: border-color 0.2s, box-shadow 0.2s;
-  appearance: none;
-  -webkit-appearance: none;
-}
-input::placeholder { color: #4A5A70; }
-input:focus, select.field:focus {
-  outline: none;
-  border-color: rgba(200,168,75,0.7);
-  box-shadow: 0 0 0 3px rgba(200,168,75,0.1);
-}
-select.field {
-  cursor: pointer;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23C8A84B' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 13px center;
-  padding-right: 34px;
-}
-select.field option { background: #0F2240; color: var(--cream); }
+/* ---- share ---- */
+.share{padding:1.5rem 0 2.5rem;text-align:center}
+.share .share-label{font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.share-icons{display:flex;align-items:flex-start;justify-content:center;gap:12px;flex-wrap:wrap}
+.share-item{display:flex;flex-direction:column;align-items:center;gap:5px}
+.share-item span{font-size:.64rem;color:var(--muted)}
+.share-icons a,.share-icons button{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;
+  border-radius:50%;background:var(--navy-2);border:1px solid var(--border);cursor:pointer;transition:.18s;padding:0;text-decoration:none}
+.share-icons a svg,.share-icons button svg{width:20px;height:20px;display:block}
+.share-icons a:hover,.share-icons button:hover{transform:translateY(-3px);box-shadow:0 6px 18px rgba(0,0,0,.4)}
+#share-whatsapp{background:#25D366}#share-facebook{background:#1877F2}#share-x{background:#000}
+#share-telegram{background:#26A5E4}
+#share-instagram{background:radial-gradient(circle at 30% 110%,#FFDA76,#FA7E1E 25%,#D62976 55%,#962FBF 80%,#4F5BD5)}
+#share-copy{background:var(--navy-2);border:1px solid var(--border)}
 
-.phone-wrap { display: flex; }
-.phone-prefix {
-  background: rgba(200,168,75,0.1);
-  border: 1px solid var(--border);
-  border-right: none;
-  border-radius: 5px 0 0 5px;
-  padding: 0 11px;
-  color: var(--gold);
-  font-size: 0.95rem;
-  display: flex;
-  align-items: center;
-}
-.phone-wrap input { border-radius: 0 5px 5px 0; }
+/* ---- faq ---- */
+.faq{padding:clamp(2rem,5vw,3.5rem) 0}
+.faq .wrap{max-width:720px}
+.faq-title{text-align:center;font-size:clamp(1.4rem,3vw,1.9rem);color:var(--gold-lt);margin-bottom:1.2rem}
+.faq-tabs{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;justify-content:center}
+.faq-tab{background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:30px;padding:8px 18px;
+  color:var(--muted);font-family:'Rubik',sans-serif;font-size:.8rem;font-weight:600;cursor:pointer;transition:.2s}
+.faq-tab.active{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.faq-item{border:1px solid var(--border);border-radius:12px;margin-bottom:10px;overflow:hidden;background:var(--navy-2);transition:border-color .2s}
+.faq-item.open{border-color:rgba(203,169,78,.5)}
+.faq-question{width:100%;text-align:start;background:transparent;border:none;color:var(--cream);
+  font-family:'Rubik',sans-serif;font-size:.94rem;font-weight:500;padding:15px 18px;cursor:pointer;
+  display:flex;justify-content:space-between;align-items:center;gap:10px}
+.faq-question .faq-icon{flex:none;color:var(--gold);font-size:1.3rem;transition:transform .25s;line-height:1}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .28s ease;padding:0 18px;color:var(--muted);font-size:.88rem;line-height:1.6}
+.faq-item.open .faq-answer{padding:0 18px 16px}
 
-.messenger-pills { display: flex; gap: 8px; flex-wrap: wrap; }
-.messenger-pill {
-  flex: 1;
-  min-width: 90px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  padding: 10px 8px;
-  color: var(--cream);
-  font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
-}
-.messenger-pill:hover { border-color: rgba(200,168,75,0.6); }
-.messenger-pill.active {
-  background: var(--gold);
-  border-color: var(--gold);
-  color: var(--navy);
-}
+/* ---- contact ---- */
+.contact{padding:clamp(2rem,5vw,3.5rem) 0}
+.contact .wrap{max-width:520px}
+.contact-title{text-align:center;font-size:1.5rem;color:var(--gold);margin-bottom:1.2rem}
+.footer-contact .btn-submit{width:auto;padding:12px 30px;border-radius:40px}
+.footer-contact-success{display:none;text-align:center;color:var(--gold-lt);font-size:.95rem}
 
-.verify-row { display: flex; align-items: center; gap: 12px; margin-top: 9px; flex-wrap: wrap; }
-.btn-verify {
-  background: rgba(200,168,75,0.12);
-  border: 1px solid var(--gold);
-  border-radius: 5px;
-  padding: 8px 14px;
-  color: var(--gold-lt);
-  font-family: 'Inter', sans-serif;
-  font-size: 0.82rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.btn-verify:hover { background: rgba(200,168,75,0.22); }
-.verify-status { font-size: 0.82rem; color: var(--muted); }
-.verify-status.ok { color: #7FD99A; font-weight: 600; }
-.verify-status.err { color: #E8867F; font-weight: 600; }
-.verify-confirm { margin-top: 10px; }
+/* ---- footer ---- */
+.site-footer{border-top:1px solid var(--border);background:var(--navy);margin-top:2rem}
+.site-footer .in{max-width:var(--maxw);margin:0 auto;padding:2.2rem clamp(18px,5vw,40px)}
+.foot-top{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:space-between;align-items:flex-start}
+.foot-links{display:flex;flex-wrap:wrap;gap:1.2rem}
+.foot-links a{color:var(--muted);text-decoration:none;font-size:.85rem;transition:.15s}
+.foot-links a:hover{color:var(--gold-lt)}
+.foot-note{margin-top:1.4rem;font-size:.74rem;color:var(--muted);line-height:1.6;max-width:70ch;border-top:1px solid var(--border);padding-top:1.2rem}
 
-.checkbox-wrap {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 9px;
-  cursor: pointer;
-}
-.checkbox-wrap input[type="checkbox"] {
-  width: 15px; height: 15px;
-  accent-color: var(--gold);
-  cursor: pointer;
-  flex-shrink: 0;
-}
-.checkbox-wrap span { font-size: 0.82rem; color: var(--muted); }
+/* reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
 
-.form-divider { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
-
-.btn-submit {
-  width: 100%;
-  background: var(--gold);
-  color: var(--navy);
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 5px;
-  padding: 15px;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.15s;
+@media (max-width:820px){
+  .hero .grid{grid-template-columns:1fr}
+  .scene{order:-1;max-width:420px;margin:0 auto;min-height:230px}
+  .process .rail{grid-template-columns:repeat(2,1fr);gap:1.5rem 1rem}
+  .process .rail::before{display:none}
 }
-.btn-submit:hover { background: var(--gold-lt); transform: translateY(-1px); }
-.btn-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
-
-.success-msg {
-  display: none;
-  visibility: hidden;
-  text-align: center;
-  padding: 48px 16px;
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important}
+  .reveal{opacity:1;transform:none}
 }
-.success-msg .checkmark { font-size: 3rem; margin-bottom: 14px; }
-.success-msg h2 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 1.7rem;
-  color: var(--gold-lt);
-  margin-bottom: 10px;
-}
-.success-msg p { color: var(--muted); }
-
-/* SHARE BAR */
-.share-bar {
-  max-width: 600px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 5vw 40px;
-  text-align: center;
-}
-.share-bar .share-label {
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 14px;
-}
-.share-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-.share-icons a, .share-icons button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--navy-2);
-  border: 1px solid var(--border);
-  text-decoration: none;
-  cursor: pointer;
-  transition: transform 0.15s, box-shadow 0.2s, background 0.2s;
-  font-family: inherit;
-  padding: 0;
-}
-.share-icons a svg, .share-icons button svg {
-  width: 20px;
-  height: 20px;
-  display: block;
-}
-.share-icons a:hover, .share-icons button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.35);
-}
-#share-whatsapp { background: #25D366; }
-#share-facebook { background: #1877F2; }
-#share-x        { background: #000000; }
-#share-telegram { background: #26A5E4; }
-#share-instagram { background: radial-gradient(circle at 30% 110%, #FFDA76 0%, #FA7E1E 25%, #D62976 55%, #962FBF 80%, #4F5BD5 100%); }
-#share-copy     { background: var(--navy-2); border: 1px solid var(--border); }
-#share-copy svg path, #share-copy svg rect { stroke: var(--gold); }
-.share-item { display: flex; flex-direction: column; align-items: center; gap: 4px; }
-.share-item span { font-size: 0.65rem; color: var(--muted); white-space: nowrap; }
-
-/* FAQ */
-.faq-section {
-  max-width: 600px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 5vw 40px;
-}
-.faq-title {
-  text-align: center;
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 1.4rem;
-  color: var(--gold-lt);
-  margin-bottom: 18px;
-}
-.faq-tabs {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 16px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.faq-tab {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 7px 16px;
-  color: var(--muted);
-  font-family: 'Inter', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-}
-.faq-tab.active {
-  background: var(--gold);
-  border-color: var(--gold);
-  color: var(--navy);
-}
-.faq-item {
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  margin-bottom: 10px;
-  overflow: hidden;
-  background: var(--navy-2);
-}
-.faq-question {
-  width: 100%;
-  text-align: left;
-  background: transparent;
-  border: none;
-  color: var(--cream);
-  font-family: 'Inter', sans-serif;
-  font-size: 0.92rem;
-  font-weight: 600;
-  padding: 14px 16px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-}
-html[dir="rtl"] .faq-question { text-align: right; }
-.faq-question .faq-icon {
-  flex-shrink: 0;
-  color: var(--gold);
-  font-size: 1.1rem;
-  transition: transform 0.2s;
-}
-.faq-item.open .faq-icon { transform: rotate(45deg); }
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.25s ease;
-  padding: 0 16px;
-  color: var(--muted);
-  font-size: 0.88rem;
-  line-height: 1.55;
-}
-.faq-item.open .faq-answer { padding: 0 16px 16px; }
-
-footer {
-  border-top: 1px solid var(--border);
-  padding: 20px 5vw;
-  text-align: center;
-}
-.footer-contact { max-width: 420px; margin: 0 auto; text-align: left; }
-.footer-contact-title {
-  text-align: center;
-  font-family: serif;
-  font-size: 1.1rem;
-  color: var(--gold);
-  margin-bottom: 16px;
-  font-weight: 600;
-}
-.footer-contact textarea {
-  width: 100%;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  padding: 11px 13px;
-  color: var(--cream);
-  font-family: 'Inter', sans-serif;
-  font-size: 0.97rem;
-  resize: vertical;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-.footer-contact textarea::placeholder { color: #4A5A70; }
-.footer-contact textarea:focus {
-  outline: none;
-  border-color: rgba(200,168,75,0.7);
-  box-shadow: 0 0 0 3px rgba(200,168,75,0.1);
-}
-.footer-contact .btn-submit { width: auto; padding: 12px 28px; font-size: 0.9rem; }
-.footer-contact-success {
-  display: none;
-  text-align: center;
-  color: var(--gold-lt);
-  font-size: 0.95rem;
-}
-
-@media (max-width: 480px) {
-  .form-card { padding: 22px 16px; }
-  .form-row { grid-template-columns: 1fr; gap: 0; }
-}
-```
-
-  </style>
+</style>
 </head>
 <body>
+<div class="stars" aria-hidden="true"></div>
+<div class="dawn" aria-hidden="true"></div>
 
-<!-- GET OUT NOW HEADER -->
-
-<div class="site-header">
-  <h1>Get Out Now ‼️</h1>
-</div>
-
-<!-- LANGUAGE SELECTOR -->
-
-<div class="lang-bar">
-  <span class="lang-globe">🌐</span>
-  <select class="lang-select" onchange="setLang(this.value)">
-    <option value="en">English</option>
-    <option value="fr">Français</option>
-    <option value="es">Español</option>
-    <option value="pt">Português</option>
-    <option value="ru">Русский</option>
-    <option value="he">עברית</option>
-  </select>
-</div>
-
-<!-- NEWSPAPER BANNER -->
-
-<div class="breaking-banner">
-  <h2 class="breaking-headline" id="t-headline">Free Flight to Israel<br/>for All Diaspora Jews</h2>
-</div>
-
-<!-- FORM -->
-
-<div class="form-page">
-  <div class="form-header">
-    <div class="form-emojis">🌍 ✈️ 🇮🇱</div>
-    <h2 id="t-title">Apply for Your Free Flight to Israel</h2>
-    <p id="t-subtitle">Fill in your details below. Our team will contact you shortly with next steps.</p>
-    <p class="form-notice" id="t-notice">Here's how it works: you send us your contact details, we coordinate with official agencies to screen your eligibility under Israel's Law of Return<sup>1</sup>, you receive free point-to-point flight tickets, and you can choose to complete your Aliyah once you're in Israel. Funding is currently pending, so tickets are awarded on a first-come, first-served basis.</p>
-    <p class="form-footnote" id="t-footnote"><sup>1</sup> Israel's Law of Return (1950) grants every Jew, as well as their children, grandchildren, and spouses, the right to immigrate to Israel and receive citizenship, regardless of where they were born or currently live.</p>
+<!-- TOP BAR -->
+<header class="topbar">
+  <div class="in">
+    <a class="brand" href="#top" aria-label="Get Out Now — home">
+      <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="22" cy="22" r="21" stroke="#CBA94E" stroke-width="1.5" opacity=".5"/>
+        <path d="M8 30 Q22 6 36 16" stroke="#CBA94E" stroke-width="1.5" stroke-dasharray="1.5 4" stroke-linecap="round"/>
+        <path d="M31.5 10.5l6.2-1.4-1.4 6.2-2.2-2.2-8.6 8.6-2-2 8.6-8.6-2.6-2.6z" fill="#E7CE86"/>
+        <path d="M35.5 14l1.7 3 3 1.7-3 1.7-1.7 3-1.7-3-3-1.7 3-1.7 1.7-3z" fill="#CBA94E"/>
+      </svg>
+      <span class="wm">Get&nbsp;Out&nbsp;<b>Now</b></span>
+    </a>
+    <nav class="langs" aria-label="Language">
+      <button class="lang-btn active" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" onclick="setLang('fr')">FR</button>
+      <button class="lang-btn" onclick="setLang('es')">ES</button>
+      <button class="lang-btn" onclick="setLang('pt')">PT</button>
+      <button class="lang-btn" onclick="setLang('ru')">RU</button>
+      <button class="lang-btn" onclick="setLang('he')">עב</button>
+    </nav>
   </div>
+</header>
 
-  <div class="form-card" id="form-card">
-    <form id="signup-form" action="https://formspree.io/f/xykqwgyb" method="POST">
-
-```
-  <div class="form-group">
-    <label for="first_name">👤 <span id="t-fname">First Name</span> <span class="req">*</span></label>
-    <input type="text" id="first_name" name="first_name" placeholder="First Name" required />
-  </div>
-
-  <div class="form-group">
-    <label>💬 <span id="t-messenger-label">Preferred Messenger</span> <span class="req">*</span></label>
-    <div class="messenger-pills">
-      <button type="button" class="messenger-pill active" data-messenger="whatsapp" id="pill-whatsapp">WhatsApp</button>
-      <button type="button" class="messenger-pill" data-messenger="telegram" id="pill-telegram">Telegram</button>
-      <button type="button" class="messenger-pill" data-messenger="signal" id="pill-signal">Signal</button>
-    </div>
-    <input type="hidden" id="messenger_type" name="messenger_type" value="whatsapp" />
-  </div>
-
-  <div class="form-group">
-    <label for="phone_number">📱 <span id="t-phone-label">Number (WhatsApp)</span> <span class="req">*</span></label>
-    <div class="phone-wrap">
-      <span class="phone-prefix">+</span>
-      <input type="tel" id="phone_number" name="phone_number" placeholder="1 555 000 0000" required />
-    </div>
-    <div class="verify-row" id="verify-row">
-      <a href="#" class="btn-verify" id="verify-fallback-link" target="_blank" rel="noopener" style="display:none;"></a>
-      <span class="verify-status" id="verify-status"></span>
-    </div>
-    <div class="verify-confirm" id="verify-confirm" style="display:none;">
-      <label class="checkbox-wrap">
-        <input type="checkbox" id="verify-checkbox" />
-        <span id="t-verify-confirm">Yes, the chat opened successfully -- this number is active</span>
-      </label>
-    </div>
-    <input type="hidden" id="number_verified" name="number_verified" value="no" />
-  </div>
-
-  <button type="submit" class="btn-submit" id="t-submit" disabled>✈️ Apply Now -- It's Free</button>
-</form>
-```
-
-  </div>
-</div>
-
-<!-- SHARE BAR -->
-
-<div class="share-bar">
-  <div class="share-label" id="t-share-label">Share This</div>
-  <div class="share-icons">
-    <div class="share-item">
-      <a href="#" id="share-whatsapp" target="_blank" rel="noopener" aria-label="Share on WhatsApp" title="WhatsApp">
-        <svg viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.05h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.15 8.15 0 0 1-1.25-4.33c0-4.51 3.68-8.19 8.2-8.19a8.15 8.15 0 0 1 8.19 8.19c0 4.52-3.68 8.19-8.15 8.19zm4.5-6.13c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.24-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.24-.85.83-.85 2.02s.87 2.34 1 2.5c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.19.21-.58.21-1.08.15-1.19-.07-.11-.23-.17-.48-.29z"/></svg>
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Israel's Law of Return · 1950</span>
+      <h1><span class="em" id="t-headline">Free Flight to Israel<br/>for All Diaspora Jews</span></h1>
+      <p class="sub" id="t-subtitle">Fill in your details below. Our team will contact you shortly with next steps.</p>
+      <a class="cta" href="#signup">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+        <span id="t-cta">Apply for your free flight</span>
       </a>
-      <span>WhatsApp</span>
-    </div>
-    <div class="share-item">
-      <a href="#" id="share-facebook" target="_blank" rel="noopener" aria-label="Share on Facebook" title="Facebook">
-        <svg viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 21.9v-8.05h2.7l.4-3.13h-3.1V8.72c0-.9.25-1.52 1.55-1.52h1.66V4.4c-.29-.04-1.27-.12-2.4-.12-2.38 0-4.01 1.45-4.01 4.12v2.3H7.6v3.13h2.7v8.05h3.2z"/></svg>
-      </a>
-      <span>Facebook</span>
-    </div>
-    <div class="share-item">
-      <a href="#" id="share-x" target="_blank" rel="noopener" aria-label="Share on X" title="X / Twitter">
-        <svg viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.22-6.82-5.97 6.82H1.66l7.73-8.83L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg>
-      </a>
-      <span>X</span>
-    </div>
-    <div class="share-item">
-      <a href="#" id="share-telegram" target="_blank" rel="noopener" aria-label="Share on Telegram" title="Telegram">
-        <svg viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="M21.94 4.4L18.6 20.3c-.25 1.1-.9 1.38-1.83.86l-5.06-3.73-2.44 2.35c-.27.27-.5.5-1.02.5l.36-5.16 9.4-8.49c.41-.36-.09-.57-.63-.2L6.03 13.1l-5-1.57c-1.09-.34-1.1-1.09.23-1.61L20.56 3.02c.9-.34 1.7.2 1.38 1.38z"/></svg>
-      </a>
-      <span>Telegram</span>
-    </div>
-    <div class="share-item">
-      <button type="button" id="share-instagram" aria-label="Share to Instagram" title="Instagram">
-        <svg viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.05.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.05.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.05-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.05-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zM12 0C8.74 0 8.33.01 7.05.07c-1.28.06-2.15.26-2.91.56-.79.31-1.46.72-2.13 1.38-.66.67-1.07 1.34-1.38 2.13-.3.76-.5 1.63-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.28.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.66 1.34 1.07 2.13 1.38.76.3 1.63.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.67 1.07-1.34 1.38-2.13.3-.76.5-1.63.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63c-.76-.3-1.63-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z"/></svg>
-      </button>
-      <span>Instagram</span>
-    </div>
-    <div class="share-item">
-      <button type="button" id="share-copy" aria-label="Copy Link" title="Copy Link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#C8A84B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L11.5 4.5"/><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07l1.36-1.36"/></svg>
-      </button>
-      <span id="t-copy-label">Copy Link</span>
-    </div>
-  </div>
-</div>
-
-<div class="faq-section">
-  <h3 class="faq-title" id="t-faq-title">Frequently Asked Questions</h3>
-  <div class="faq-tabs">
-    <button type="button" class="faq-tab active" id="tab-applicants" data-tab="applicants"><span id="t-tab-applicants">Applicants</span></button>
-    <button type="button" class="faq-tab" id="tab-investors" data-tab="investors">Investors</button>
-    <button type="button" class="faq-tab" id="tab-developers" data-tab="developers">Developers</button>
-  </div>
-  <div id="faq-list"></div>
-</div>
-
-<footer>
-  <div class="footer-contact" id="footer-contact">
-    <h3 class="footer-contact-title">Contact Us</h3>
-    <form id="contact-form" action="https://formspree.io/f/xykqwgyb" method="POST">
-      <div class="form-group">
-        <label for="contact_name">Name</label>
-        <input type="text" id="contact_name" name="name" placeholder="Your Name" required />
+      <div class="reassure">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span>No documents to start · two fields · it's free</span>
       </div>
-      <div class="form-group">
-        <label for="contact_email">Email</label>
-        <input type="email" id="contact_email" name="email" placeholder="you@example.com" required />
-      </div>
-      <div class="form-group">
-        <label for="contact_message">Message</label>
-        <textarea id="contact_message" name="message" placeholder="How can we help?" rows="4" required></textarea>
-      </div>
-      <button type="submit" class="btn-submit" id="contact-submit">Send Message</button>
-    </form>
+    </div>
+    <div class="scene float" aria-hidden="true">
+      <svg viewBox="0 0 460 400" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#CBA94E" stop-opacity=".9"/><stop offset="100%" stop-color="#CBA94E" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="earth" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#16304f"/><stop offset="100%" stop-color="#0B1A2E"/>
+          </linearGradient>
+        </defs>
+        <!-- orbital ring -->
+        <g class="orbit" style="transform-box:fill-box;transform-origin:center">
+          <circle cx="230" cy="230" r="150" fill="none" stroke="#CBA94E" stroke-width="1" stroke-dasharray="2 10" opacity=".35"/>
+        </g>
+        <!-- diaspora globe -->
+        <circle cx="90" cy="300" r="52" fill="url(#earth)" stroke="#CBA94E" stroke-opacity=".4"/>
+        <path d="M55 292c14-6 24 6 38-2s26 4 40-3" fill="none" stroke="#5C8BC0" stroke-width="1.2" opacity=".6"/>
+        <path d="M60 312c12-4 22 6 34 0s24 2 36-4" fill="none" stroke="#5C8BC0" stroke-width="1.2" opacity=".5"/>
+        <!-- flight arc -->
+        <path id="arc" d="M118 268 Q250 60 372 150" fill="none" stroke="#CBA94E" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round" opacity=".7"/>
+        <!-- destination: Jerusalem light + star of david -->
+        <circle class="dest" cx="372" cy="150" r="26" fill="url(#glow)"/>
+        <g class="dest" transform="translate(372,150)">
+          <path d="M0 -13 11.3 6.5 -11.3 6.5Z M0 13 11.3 -6.5 -11.3 -6.5Z" fill="none" stroke="#E7CE86" stroke-width="1.6" stroke-linejoin="round"/>
+        </g>
+        <!-- floating clouds -->
+        <g class="cloud"><ellipse cx="180" cy="180" rx="30" ry="9" fill="#F5F0E4" opacity=".14"/></g>
+        <g class="cloud b"><ellipse cx="300" cy="250" rx="24" ry="7" fill="#F5F0E4" opacity=".12"/></g>
+        <!-- plane following the arc -->
+        <g class="plane-g">
+          <g transform="scale(1.1)">
+            <path d="M20 0 L-14 -9 L-8 0 L-14 9 Z M-8 0 L-20 -3 M-8 0 L-20 3" fill="#E7CE86" stroke="#CBA94E" stroke-width="1" stroke-linejoin="round"/>
+          </g>
+          <animateMotion dur="9s" repeatCount="indefinite" rotate="auto" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+            <mpath href="#arc"/>
+          </animateMotion>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS (icons are language-neutral) -->
+<section class="process reveal">
+  <div class="wrap">
+    <div class="rail">
+      <div class="step"><div class="disc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg></div><div class="n">01</div><div class="t">Send your details</div></div>
+      <div class="step"><div class="disc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div><div class="n">02</div><div class="t">We screen eligibility</div></div>
+      <div class="step"><div class="disc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><path d="M13 5v14"/></svg></div><div class="n">03</div><div class="t">Receive free tickets</div></div>
+      <div class="step"><div class="disc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div><div class="n">04</div><div class="t">Complete your Aliyah</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLY -->
+<section class="apply reveal" id="signup">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="t-title">Apply for Your Free Flight to Israel</h2>
+      <p class="sub" id="t-title-sub">Two fields to begin — your first name and a messenger number. Everything else comes step by step.</p>
+      <p class="form-notice" id="t-notice">Here's how it works…</p>
+      <p class="form-footnote" id="t-footnote"><sup>1</sup> Israel's Law of Return.</p>
+    </div>
+    <div class="form-card" id="form-card">
+      <form id="signup-form" action="https://formspree.io/f/xykqwgyb" method="POST">
+        <div class="form-group">
+          <label for="first_name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span id="t-fname">First Name</span> <span class="req">*</span></label>
+          <input type="text" id="first_name" name="first_name" placeholder="First Name" required />
+        </div>
+        <div class="form-group">
+          <label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span id="t-messenger-label">Preferred Messenger</span> <span class="req">*</span></label>
+          <div class="messenger-pills">
+            <button type="button" class="messenger-pill active" data-messenger="whatsapp" id="pill-whatsapp">WhatsApp</button>
+            <button type="button" class="messenger-pill" data-messenger="telegram" id="pill-telegram">Telegram</button>
+            <button type="button" class="messenger-pill" data-messenger="signal" id="pill-signal">Signal</button>
+          </div>
+          <input type="hidden" id="messenger_type" name="messenger_type" value="whatsapp" />
+        </div>
+        <div class="form-group">
+          <label for="phone_number"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg><span id="t-phone-label">Number (WhatsApp)</span> <span class="req">*</span></label>
+          <div class="phone-wrap">
+            <span class="phone-prefix">+</span>
+            <input type="tel" id="phone_number" name="phone_number" placeholder="1 555 000 0000" required />
+          </div>
+          <div class="verify-row" id="verify-row">
+            <a href="#" class="btn-verify" id="verify-fallback-link" target="_blank" rel="noopener" style="display:none;"></a>
+            <span class="verify-status" id="verify-status"></span>
+          </div>
+          <div class="verify-confirm" id="verify-confirm" style="display:none;">
+            <label class="checkbox-wrap">
+              <input type="checkbox" id="verify-checkbox" />
+              <span id="t-verify-confirm">Yes, the chat opened successfully -- this number is active</span>
+            </label>
+          </div>
+          <input type="hidden" id="number_verified" name="number_verified" value="no" />
+        </div>
+        <button type="submit" class="btn-submit" id="t-submit" disabled>✈️ Apply Now -- It's Free</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- SHARE -->
+<section class="share reveal">
+  <div class="wrap">
+    <div class="share-label" id="t-share-label">Share This</div>
+    <div class="share-icons">
+      <div class="share-item"><a href="#" id="share-whatsapp" target="_blank" rel="noopener" aria-label="Share on WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.05h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.15 8.15 0 0 1-1.25-4.33c0-4.51 3.68-8.19 8.2-8.19a8.15 8.15 0 0 1 8.19 8.19c0 4.52-3.68 8.19-8.15 8.19zm4.5-6.13c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.24-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.24-.85.83-.85 2.02s.87 2.34 1 2.5c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.19.21-.58.21-1.08.15-1.19-.07-.11-.23-.17-.48-.29z"/></svg></a><span>WhatsApp</span></div>
+      <div class="share-item"><a href="#" id="share-facebook" target="_blank" rel="noopener" aria-label="Share on Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 21.9v-8.05h2.7l.4-3.13h-3.1V8.72c0-.9.25-1.52 1.55-1.52h1.66V4.4c-.29-.04-1.27-.12-2.4-.12-2.38 0-4.01 1.45-4.01 4.12v2.3H7.6v3.13h2.7v8.05h3.2z"/></svg></a><span>Facebook</span></div>
+      <div class="share-item"><a href="#" id="share-x" target="_blank" rel="noopener" aria-label="Share on X" title="X / Twitter"><svg viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.22-6.82-5.97 6.82H1.66l7.73-8.83L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a><span>X</span></div>
+      <div class="share-item"><a href="#" id="share-telegram" target="_blank" rel="noopener" aria-label="Share on Telegram" title="Telegram"><svg viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="M21.94 4.4L18.6 20.3c-.25 1.1-.9 1.38-1.83.86l-5.06-3.73-2.44 2.35c-.27.27-.5.5-1.02.5l.36-5.16 9.4-8.49c.41-.36-.09-.57-.63-.2L6.03 13.1l-5-1.57c-1.09-.34-1.1-1.09.23-1.61L20.56 3.02c.9-.34 1.7.2 1.38 1.38z"/></svg></a><span>Telegram</span></div>
+      <div class="share-item"><button type="button" id="share-instagram" aria-label="Share to Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.05.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.05.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.05-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.05-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zM12 0C8.74 0 8.33.01 7.05.07c-1.28.06-2.15.26-2.91.56-.79.31-1.46.72-2.13 1.38-.66.67-1.07 1.34-1.38 2.13-.3.76-.5 1.63-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.28.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.66 1.34 1.07 2.13 1.38.76.3 1.63.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.67 1.07-1.34 1.38-2.13.3-.76.5-1.63.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63c-.76-.3-1.63-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z"/></svg></button><span>Instagram</span></div>
+      <div class="share-item"><button type="button" id="share-copy" aria-label="Copy Link" title="Copy Link"><svg viewBox="0 0 24 24" fill="none" stroke="#CBA94E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L11.5 4.5"/><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07l1.36-1.36"/></svg></button><span id="t-copy-label">Copy Link</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq reveal">
+  <div class="wrap">
+    <h3 class="faq-title" id="t-faq-title">Frequently Asked Questions</h3>
+    <div class="faq-tabs">
+      <button type="button" class="faq-tab active" id="tab-applicants" data-tab="applicants"><span id="t-tab-applicants">Applicants</span></button>
+      <button type="button" class="faq-tab" id="tab-investors" data-tab="investors">Investors</button>
+      <button type="button" class="faq-tab" id="tab-developers" data-tab="developers">Developers</button>
+    </div>
+    <div id="faq-list"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact reveal">
+  <div class="wrap">
+    <div class="footer-contact" id="footer-contact">
+      <h3 class="contact-title">Contact Us</h3>
+      <form id="contact-form" action="https://formspree.io/f/xykqwgyb" method="POST">
+        <div class="form-group">
+          <label for="contact_name">Name</label>
+          <input type="text" id="contact_name" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <label for="contact_email">Email</label>
+          <input type="email" id="contact_email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="contact_message">Message</label>
+          <textarea id="contact_message" name="message" placeholder="How can we help?" rows="4" required></textarea>
+        </div>
+        <div style="text-align:center"><button type="submit" class="btn-submit" id="contact-submit">Send Message</button></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="in">
+    <div class="foot-top">
+      <a class="brand" href="#top"><span class="wm">Get&nbsp;Out&nbsp;<b>Now</b></span></a>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="/about">About</a>
+        <a href="/how-it-works">How It Works</a>
+        <a href="/faq">FAQ</a>
+        <a href="/contact">Contact</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </nav>
+    </div>
+    <p class="foot-note">Get Out Now helps Jews eligible under Israel's Law of Return (1950) apply for free point-to-point flights. Eligibility is screened in coordination with official agencies; final aliyah decisions rest with the relevant Israeli authorities. Funding is currently pending, so tickets are awarded first-come, first-served. This project does not speak on behalf of the Government of Israel or the Jewish Agency.</p>
   </div>
 </footer>
 
@@ -987,5 +776,23 @@ footer {
   });
 </script>
 
+<script>
+/* progressive reveal + set initial language chrome */
+(function(){
+  var io=('IntersectionObserver'in window)?new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.12}):null;
+  document.querySelectorAll('.reveal').forEach(function(el){ io?io.observe(el):el.classList.add('in'); });
+  // sync active language button when setLang runs
+  var _sl=window.setLang;
+  if(typeof _sl==='function'){
+    window.setLang=function(code){ _sl(code);
+      document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.remove('active');});
+      var map={en:0,fr:1,es:2,pt:3,ru:4,he:5}; var btns=document.querySelectorAll('.lang-btn');
+      if(btns[map[code]]) btns[map[code]].classList.add('active');
+    };
+  }
+})();
+</script>
 </body>
 </html>
