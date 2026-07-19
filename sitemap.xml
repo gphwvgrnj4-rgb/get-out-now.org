@@ -60,4 +60,424 @@
     <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/"/>
   </url>
+  <url>
+    <loc>https://get-out-now.org/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/about"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/about"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/about"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/about"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/fr/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/about"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/about"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/about"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/about"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/es/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/about"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/about"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/about"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/about"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/pt/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/about"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/about"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/about"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/about"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/ru/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/about"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/about"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/about"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/about"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/he/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/about"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/about"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/about"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/about"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/how-it-works</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/how-it-works"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/fr/how-it-works</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/how-it-works"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/es/how-it-works</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/how-it-works"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/pt/how-it-works</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/how-it-works"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/ru/how-it-works</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/how-it-works"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/he/how-it-works</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/how-it-works"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/faq</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/faq"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/faq"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/faq"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/faq"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/faq"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/faq"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/fr/faq</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/faq"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/faq"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/faq"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/faq"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/faq"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/faq"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/es/faq</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/faq"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/faq"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/faq"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/faq"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/faq"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/faq"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/pt/faq</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/faq"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/faq"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/faq"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/faq"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/faq"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/faq"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/ru/faq</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/faq"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/faq"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/faq"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/faq"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/faq"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/faq"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/he/faq</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/faq"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/faq"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/faq"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/faq"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/faq"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/faq"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/contact"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/contact"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/contact"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/fr/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/contact"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/contact"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/contact"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/es/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/contact"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/contact"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/contact"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/pt/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/contact"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/contact"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/contact"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/ru/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/contact"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/contact"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/contact"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/he/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/contact"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/contact"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/contact"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/privacy"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/fr/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/privacy"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/es/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/privacy"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/pt/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/privacy"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/ru/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/privacy"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/he/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/privacy"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/terms"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/terms"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/fr/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/terms"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/terms"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/es/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/terms"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/terms"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/pt/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/terms"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/terms"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/ru/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/terms"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/terms"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/he/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/terms"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/terms"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/cookies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/cookies"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/cookies"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/cookies"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/cookies"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/cookies"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/cookies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/cookies"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/fr/cookies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/cookies"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/cookies"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/cookies"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/cookies"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/cookies"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/cookies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/cookies"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/es/cookies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/cookies"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/cookies"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/cookies"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/cookies"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/cookies"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/cookies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/cookies"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/pt/cookies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/cookies"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/cookies"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/cookies"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/cookies"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/cookies"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/cookies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/cookies"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/ru/cookies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/cookies"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/cookies"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/cookies"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/cookies"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/cookies"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/cookies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/cookies"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/he/cookies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/cookies"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/cookies"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://get-out-now.org/es/cookies"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/cookies"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/cookies"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/cookies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/cookies"/>
+  </url>
 </urlset>

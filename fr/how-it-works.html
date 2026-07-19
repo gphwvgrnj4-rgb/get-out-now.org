@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comment ça marche — Get Out Now</title><meta name="description" content="Les quatre étapes, de la candidature à votre vol retour vers Israël.">
+<link rel="canonical" href="https://get-out-now.org/fr/how-it-works"><link rel="alternate" hreflang="en" href="https://get-out-now.org/how-it-works"><link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/how-it-works"><link rel="alternate" hreflang="es" href="https://get-out-now.org/es/how-it-works"><link rel="alternate" hreflang="pt" href="https://get-out-now.org/pt/how-it-works"><link rel="alternate" hreflang="ru" href="https://get-out-now.org/ru/how-it-works"><link rel="alternate" hreflang="he" href="https://get-out-now.org/he/how-it-works"><link rel="alternate" hreflang="x-default" href="https://get-out-now.org/how-it-works">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700;900&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--night:#081525;--navy:#0B1A2E;--navy-2:#0F2240;--gold:#CBA94E;--gold-lt:#E7CE86;--cream:#F5F0E4;--muted:#93A4BC;--border:rgba(203,169,78,.22)}
+body{background:var(--night);color:var(--cream);font-family:'Rubik',system-ui,sans-serif;font-size:16px;line-height:1.7}
+h1,h2,h3{font-family:'Frank Ruhl Libre','Rubik',serif;line-height:1.15;color:var(--cream)}
+[dir=rtl] body,[dir=rtl]{font-family:'Rubik',sans-serif}
+a{color:var(--gold-lt)}
+.wrap{max-width:760px;margin:0 auto;padding:0 clamp(18px,5vw,32px)}
+.topbar{position:sticky;top:0;z-index:60;background:rgba(8,21,37,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.topbar .in{max-width:1080px;margin:0 auto;padding:.7rem clamp(18px,5vw,32px);display:flex;align-items:center;gap:1rem}
+.brand{display:flex;align-items:center;gap:.55rem;text-decoration:none;margin-inline-end:auto}
+.brand svg{width:34px;height:34px}.brand .wm{font-family:'Frank Ruhl Libre',serif;font-weight:900;font-size:1.05rem;color:var(--cream)}.brand .wm b{color:var(--gold)}
+.langs{display:flex;gap:.2rem;overflow-x:auto}
+.lang-btn{border:1px solid var(--border);color:var(--muted);font-size:.7rem;font-weight:600;padding:.3rem .5rem;border-radius:20px;text-decoration:none}
+.lang-btn.active{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.page-hero{text-align:center;padding:clamp(2.4rem,6vw,4rem) 0 1.5rem;background:radial-gradient(ellipse at 50% 0%,rgba(203,169,78,.1),transparent 60%)}
+.page-hero .crumb{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:.8rem}
+.page-hero .crumb a{color:var(--gold)}
+.page-hero h1{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:900}
+.page-hero p{color:var(--muted);max-width:52ch;margin:.7rem auto 0}
+.prose{padding:1.5rem 0 3rem}
+.prose h2{font-size:1.3rem;color:var(--gold-lt);margin:2rem 0 .6rem}
+.prose p,.prose li{color:#cdd6e3;margin:0 0 1rem}.prose ul{padding-inline-start:1.3rem}
+.draft{background:rgba(203,169,78,.09);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:.85rem;color:var(--gold-lt);margin-bottom:1.4rem}
+.faq-tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:16px}
+.faq-tab{background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:30px;padding:8px 18px;color:var(--muted);font-family:'Rubik';font-size:.8rem;font-weight:600;cursor:pointer}
+.faq-tab.active{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.faq-item{border:1px solid var(--border);border-radius:12px;margin-bottom:10px;overflow:hidden;background:var(--navy-2)}
+.faq-item.open{border-color:rgba(203,169,78,.5)}
+.faq-question{width:100%;text-align:start;background:transparent;border:none;color:var(--cream);font-family:'Rubik';font-size:.94rem;padding:15px 18px;cursor:pointer;display:flex;justify-content:space-between;gap:10px}
+.faq-question .faq-icon{color:var(--gold);font-size:1.3rem;transition:.25s}.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .28s;padding:0 18px;color:var(--muted);font-size:.88rem}.faq-item.open .faq-answer{padding:0 18px 16px}
+form label{display:block;font-size:.74rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+form input,form textarea{width:100%;background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:9px;padding:12px 14px;color:var(--cream);font-family:'Rubik';font-size:.97rem;margin-bottom:16px}
+.btn{background:linear-gradient(135deg,var(--gold-lt),var(--gold));color:var(--navy);font-family:'Rubik';font-weight:700;border:none;border-radius:40px;padding:13px 30px;cursor:pointer;font-size:.95rem}
+footer{border-top:1px solid var(--border);background:var(--navy);margin-top:2rem}
+footer .in{max-width:1080px;margin:0 auto;padding:2rem clamp(18px,5vw,32px)}
+.foot-links{display:flex;flex-wrap:wrap;gap:1.1rem;margin-top:.5rem}.foot-links a{color:var(--muted);text-decoration:none;font-size:.85rem}
+</style></head><body>
+<header class="topbar"><div class="in"><a class="brand" href="/fr/"><svg viewBox="0 0 44 44" fill="none" aria-hidden="true"><path d="M5 15h6 M2 22h8 M5 29h6" stroke="#CBA94E" stroke-width="1.6" stroke-linecap="round" opacity=".75"/><path d="M24 7 L35.6 27 L12.4 27 Z" stroke="#E7CE86" stroke-width="1.8" stroke-linejoin="round"/><path d="M24 37 L35.6 17 L12.4 17 Z" stroke="#CBA94E" stroke-width="1.8" stroke-linejoin="round"/></svg><span class="wm">Get&nbsp;Out&nbsp;<b>Now</b></span></a><nav class="langs"><a class="lang-btn" href="/how-it-works">EN</a><a class="lang-btn active" href="/fr/how-it-works">FR</a><a class="lang-btn" href="/es/how-it-works">ES</a><a class="lang-btn" href="/pt/how-it-works">PT</a><a class="lang-btn" href="/ru/how-it-works">RU</a><a class="lang-btn" href="/he/how-it-works">עב</a></nav></div></header>
+<div class="page-hero"><div class="wrap"><p class="crumb"><a href="/fr/">Accueil</a> / Comment ça marche</p><h1>Comment ça marche</h1><p>Quatre étapes, d’un formulaire à deux champs jusqu’à votre vol retour.</p></div></div>
+<main class="wrap prose"><h2>1 · Envoyez vos coordonnées</h2><p>Commencez avec simplement votre prénom et un numéro WhatsApp, Telegram ou Signal valide. Rien d’autre n’est nécessaire pour débuter.</p><h2>2 · Nous vérifions votre éligibilité</h2><p>Nous coordonnons avec des organismes officiels pour vérifier votre éligibilité au titre de la Loi du Retour d’Israël. Vous ne serez jamais rejeté pour un dossier incomplet — nous vous indiquons exactement ce qu’il manque et vous laissons compléter votre dossier jusqu’à ce que tout soit en règle.</p><h2>3 · Recevez vos billets gratuits</h2><p>Une fois votre éligibilité confirmée et le financement disponible, vous recevez des billets d’avion gratuits, en vol direct. Les billets sont attribués par ordre d’arrivée.</p><h2>4 · Finalisez votre Alya</h2><p>Vous pouvez choisir d’achever votre alya officielle une fois arrivé en Israël. Chaque personne est évaluée individuellement — un proche non éligible ne disqualifie jamais le reste de la famille.</p><h2>La Loi du Retour</h2><p>La Loi du Retour d’Israël (1950) accorde à tout Juif, ainsi qu’à ses enfants, petits-enfants et conjoints, le droit d’immigrer en Israël et d’obtenir la citoyenneté, quel que soit leur lieu de naissance ou de résidence actuel.</p></main>
+<footer><div class="in"><a class="brand" href="/fr/"><span class="wm">Get&nbsp;Out&nbsp;<b>Now</b></span></a><nav class="foot-links"><a href="/fr/about">À propos</a><a href="/fr/how-it-works">Comment ça marche</a><a href="/fr/faq">FAQ</a><a href="/fr/contact">Contact</a><a href="/fr/privacy">Confidentialité</a><a href="/fr/terms">Conditions</a></nav></div></footer>
+</body></html>
