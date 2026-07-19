@@ -1,0 +1,2 @@
+# clean URLs for language homes handled by dir index
+/*.html  /:splat  301!
