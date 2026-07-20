@@ -42,9 +42,37 @@ form input,form textarea{width:100%;background:rgba(255,255,255,.05);border:1px 
 footer{border-top:1px solid var(--border);background:var(--navy);margin-top:2rem}
 footer .in{max-width:1080px;margin:0 auto;padding:2rem clamp(18px,5vw,32px)}
 .foot-links{display:flex;flex-wrap:wrap;gap:1.1rem;margin-top:.5rem}.foot-links a{color:var(--muted);text-decoration:none;font-size:.85rem}
+
+.langpick{position:relative;display:inline-flex}
+.langpick-btn{display:inline-flex;align-items:center;gap:.35rem;cursor:pointer;background:transparent;border:1px solid var(--border);border-radius:20px;padding:.32rem .62rem;color:var(--cream);font-family:'Rubik',sans-serif;line-height:1}
+.langpick-btn:hover{border-color:var(--gold)}
+.langpick-btn .globe{color:var(--gold);flex:0 0 auto}
+.langpick-cur{font-size:.72rem;font-weight:700;letter-spacing:.04em}
+.langpick-caret{font-size:.55rem;opacity:.7;transition:transform .15s ease}
+.langpick.open .langpick-caret{transform:rotate(180deg)}
+.langpick-menu{display:none;position:absolute;top:calc(100% + 8px);inset-inline-end:0;z-index:80;flex-direction:column;min-width:130px;background:var(--navy-lift);border:1px solid var(--gold);border-radius:12px;padding:.35rem;box-shadow:0 14px 34px rgba(0,0,0,.45)}
+.langpick.open .langpick-menu{display:flex}
+.langpick-menu .lang-btn{display:block;border:0;margin:0;text-align:start;opacity:.85;white-space:nowrap}
+.langpick-menu .lang-btn:hover{background:rgba(255,255,255,.08);opacity:1;border:0}
+.langpick-menu .lang-btn.active{background:var(--gold);color:var(--navy);opacity:1}
 </style></head><body>
-<header class="topbar"><div class="in"><a class="brand" href="/he/"><svg viewBox="0 0 44 44" fill="none" aria-hidden="true"><path d="M5 15h6 M2 22h8 M5 29h6" stroke="#CBA94E" stroke-width="1.6" stroke-linecap="round" opacity=".75"/><path d="M24 7 L35.6 27 L12.4 27 Z" stroke="#E7CE86" stroke-width="1.8" stroke-linejoin="round"/><path d="M24 37 L35.6 17 L12.4 17 Z" stroke="#CBA94E" stroke-width="1.8" stroke-linejoin="round"/></svg><span class="wm">Get&nbsp;Out&nbsp;<b>Now</b></span></a><nav class="langs"><svg class="globe" aria-hidden="true" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#CBA94E" stroke-width="1.7" stroke-linecap="round" style="flex:0 0 auto;align-self:center;margin-inline-end:3px"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.7 2.6 15.3 0 18"/><path d="M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg><a class="lang-btn" href="/about">EN</a><a class="lang-btn" href="/fr/about">FR</a><a class="lang-btn" href="/es/about">ES</a><a class="lang-btn" href="/pt/about">PT</a><a class="lang-btn" href="/ru/about">RU</a><a class="lang-btn active" href="/he/about">עב</a></nav></div></header>
+<header class="topbar"><div class="in"><a class="brand" href="/he/"><svg viewBox="0 0 44 44" fill="none" aria-hidden="true"><path d="M5 15h6 M2 22h8 M5 29h6" stroke="#CBA94E" stroke-width="1.6" stroke-linecap="round" opacity=".75"/><path d="M24 7 L35.6 27 L12.4 27 Z" stroke="#E7CE86" stroke-width="1.8" stroke-linejoin="round"/><path d="M24 37 L35.6 17 L12.4 17 Z" stroke="#CBA94E" stroke-width="1.8" stroke-linejoin="round"/></svg><span class="wm">Get&nbsp;Out&nbsp;<b>Now</b></span></a><nav class="langpick"><button class="langpick-btn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Language"><svg class="globe" aria-hidden="true" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.7 2.6 15.3 0 18"/><path d="M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg><span class="langpick-cur">עב</span><span class="langpick-caret" aria-hidden="true">▾</span></button><div class="langpick-menu" role="listbox"><a class="lang-btn" href="/about">EN</a><a class="lang-btn" href="/fr/about">FR</a><a class="lang-btn" href="/es/about">ES</a><a class="lang-btn" href="/pt/about">PT</a><a class="lang-btn" href="/ru/about">RU</a><a class="lang-btn active" href="/he/about">עב</a></div></nav></div></header>
 <div class="page-hero"><div class="wrap"><p class="crumb"><a href="/he/">בית</a> / אודות</p><h1>אודות Get Out Now</h1><p>יוזמה התנדבותית שמטרתה להפוך את הצעד הראשון הביתה לפשוט ככל האפשר.</p></div></div>
 <main class="wrap prose"><p>Get Out Now עוזר ליהודי התפוצות הזכאים על פי חוק השבות של ישראל (1950) להגיש בקשה לטיסות חינם הביתה, מנקודה לנקודה. בנינו את זה סביב אמונה אחת: הצעד הראשון צריך להיות כמעט ללא מאמץ, רק שם פרטי ומספר מסנג'ר, וכל מה שמסובך יותר קורה בעזרתנו, לא לפני כן.</p><h2>מה אנחנו עושים</h2><p>אנחנו אוספים בקשה מינימלית, מתאמים עם סוכנויות רשמיות לבדיקת זכאות על פי חוק השבות, ובכפוף לזמינות מימון מסדרים טיסות חינם. את העלייה הפורמלית אפשר להשלים לאחר ההגעה לישראל.</p><h2>מה שאנחנו לא</h2><p>אנחנו לא גוף ממשלתי, ואנחנו לא מחליטים על עלייה. ההחלטות הסופיות נתונות לרשויות הישראליות המוסמכות ולסוכנות היהודית. התפקיד שלנו הוא פשוט להנמיך את המכשול בתחילת הדרך.</p><h2>מימון</h2><p>המימון נמצא כרגע בתהליך גיוס, ולכן הכרטיסים מוענקים על בסיס כל הקודם זוכה. אף מועמד לא נדרש לשלם.</p></main>
 <footer><div class="in"><a class="brand" href="/he/"><span class="wm">Get&nbsp;Out&nbsp;<b>Now</b></span></a><nav class="foot-links"><a href="/he/about">אודות</a><a href="/he/how-it-works">איך זה עובד</a><a href="/he/faq">שאלות</a><a href="/he/contact">צור קשר</a><a href="/he/privacy">פרטיות</a><a href="/he/terms">תנאים</a></nav></div></footer>
+<script>
+/* language dropdown toggle */
+(function(){
+  function closeAll(except){
+    var open=document.querySelectorAll('.langpick.open');
+    for(var i=0;i<open.length;i++){ if(open[i]!==except){ open[i].classList.remove('open'); var b=open[i].querySelector('.langpick-btn'); if(b)b.setAttribute('aria-expanded','false'); } }
+  }
+  document.addEventListener('click',function(e){
+    var btn=e.target.closest?e.target.closest('.langpick-btn'):null;
+    if(btn){ e.preventDefault(); var pick=btn.closest('.langpick'); var willOpen=!pick.classList.contains('open'); closeAll(pick); pick.classList.toggle('open',willOpen); btn.setAttribute('aria-expanded',willOpen?'true':'false'); return; }
+    if(!(e.target.closest&&e.target.closest('.langpick-menu'))) closeAll(null);
+  });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'||e.keyCode===27) closeAll(null); });
+})();
+</script>
 </body></html>
