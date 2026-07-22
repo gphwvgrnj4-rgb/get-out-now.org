@@ -163,7 +163,7 @@ input:focus,textarea:focus{outline:none;border-color:rgba(203,169,78,.7);box-sha
 .btn-submit:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none}
 
 /* ---- share ---- */
-.share{padding:1.5rem 0 2.5rem;text-align:center}
+
 .share .share-label{font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
 .share-icons{display:flex;align-items:flex-start;justify-content:center;gap:12px;flex-wrap:wrap}
 .share-item{display:flex;flex-direction:column;align-items:center;gap:5px}
@@ -245,6 +245,13 @@ input:focus,textarea:focus{outline:none;border-color:rgba(203,169,78,.7);box-sha
 .best-efforts .wrap{max-width:var(--maxw);margin:0 auto;padding:1.1rem clamp(18px,5vw,40px)}
 .best-efforts p{margin:0;color:var(--cream);font-size:.98rem;line-height:1.6;text-align:center}
 .best-efforts strong{color:var(--gold-lt)}
+
+/* unified share buttons */
+.share{display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap;margin:1rem auto .2rem}
+.share .sh{width:38px;height:38px;flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid var(--border);color:var(--cream);background:transparent;cursor:pointer;padding:0;transition:background .15s,color .15s,border-color .15s,transform .15s}
+.share .sh svg{width:17px;height:17px;fill:currentColor}
+.share .sh:hover{background:var(--gold);color:var(--navy);border-color:var(--gold);transform:translateY(-2px)}
+.share .sh.copied{background:var(--gold);color:var(--navy);border-color:var(--gold)}
 </style>
 <link rel="canonical" href="https://get-out-now.org/fr/">
 <link rel="alternate" hreflang="en" href="https://get-out-now.org/">
@@ -403,21 +410,6 @@ input:focus,textarea:focus{outline:none;border-color:rgba(203,169,78,.7);box-sha
   </div>
 </section>
 
-<!-- SHARE -->
-<section class="share reveal">
-  <div class="wrap">
-    <div class="share-label" id="t-share-label">Partager</div>
-    <div class="share-icons">
-      <div class="share-item"><a href="#" id="share-whatsapp" target="_blank" rel="noopener" aria-label="Share on WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.05h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.15 8.15 0 0 1-1.25-4.33c0-4.51 3.68-8.19 8.2-8.19a8.15 8.15 0 0 1 8.19 8.19c0 4.52-3.68 8.19-8.15 8.19zm4.5-6.13c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.24-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.24-.85.83-.85 2.02s.87 2.34 1 2.5c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.19.21-.58.21-1.08.15-1.19-.07-.11-.23-.17-.48-.29z"/></svg></a><span>WhatsApp</span></div>
-      <div class="share-item"><a href="#" id="share-facebook" target="_blank" rel="noopener" aria-label="Share on Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 21.9v-8.05h2.7l.4-3.13h-3.1V8.72c0-.9.25-1.52 1.55-1.52h1.66V4.4c-.29-.04-1.27-.12-2.4-.12-2.38 0-4.01 1.45-4.01 4.12v2.3H7.6v3.13h2.7v8.05h3.2z"/></svg></a><span>Facebook</span></div>
-      <div class="share-item"><a href="#" id="share-x" target="_blank" rel="noopener" aria-label="Share on X" title="X / Twitter"><svg viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.22-6.82-5.97 6.82H1.66l7.73-8.83L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a><span>X</span></div>
-      <div class="share-item"><a href="#" id="share-telegram" target="_blank" rel="noopener" aria-label="Share on Telegram" title="Telegram"><svg viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="M21.94 4.4L18.6 20.3c-.25 1.1-.9 1.38-1.83.86l-5.06-3.73-2.44 2.35c-.27.27-.5.5-1.02.5l.36-5.16 9.4-8.49c.41-.36-.09-.57-.63-.2L6.03 13.1l-5-1.57c-1.09-.34-1.1-1.09.23-1.61L20.56 3.02c.9-.34 1.7.2 1.38 1.38z"/></svg></a><span>Telegram</span></div>
-      <div class="share-item"><button type="button" id="share-instagram" aria-label="Share to Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.05.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.05.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.05-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.05-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zM12 0C8.74 0 8.33.01 7.05.07c-1.28.06-2.15.26-2.91.56-.79.31-1.46.72-2.13 1.38-.66.67-1.07 1.34-1.38 2.13-.3.76-.5 1.63-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.28.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.66 1.34 1.07 2.13 1.38.76.3 1.63.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.67 1.07-1.34 1.38-2.13.3-.76.5-1.63.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63c-.76-.3-1.63-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z"/></svg></button><span>Instagram</span></div>
-      <div class="share-item"><button type="button" id="share-copy" aria-label="Copy Link" title="Copy Link"><svg viewBox="0 0 24 24" fill="none" stroke="#CBA94E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L11.5 4.5"/><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07l1.36-1.36"/></svg></button><span id="t-copy-label">Copier le lien</span></div>
-    </div>
-  </div>
-</section>
-
 <!-- FAQ -->
 <section class="faq reveal">
   <div class="wrap">
@@ -464,6 +456,7 @@ input:focus,textarea:focus{outline:none;border-color:rgba(203,169,78,.7);box-sha
     </div>
     <p class="foot-note">Get Out Now œuvre à mettre à l'abri les Juifs éligibles au titre de la Loi du Retour d'Israël (1950), par tous les moyens possibles — air, mer ou terre. Efforts de bonne foi uniquement ; des discussions sont en cours avec l'Agence Juive et d'autres autorités de l'État d'Israël, et les décisions finales d'alya reviennent aux autorités israéliennes compétentes. Le financement est actuellement en attente, l'aide est donc apportée selon le principe du premier arrivé, premier servi. Ce projet ne parle pas au nom du gouvernement d'Israël ni de l'Agence juive.</p>
   </div>
+<div class="share" aria-label="Share this page"><a class="sh" data-sh="whatsapp" href="#" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a><a class="sh" data-sh="telegram" href="#" target="_blank" rel="noopener" aria-label="Share on Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a><a class="sh" data-sh="x" href="#" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a class="sh" data-sh="facebook" href="#" target="_blank" rel="noopener" aria-label="Share on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a class="sh" data-sh="email" href="#" target="_blank" rel="noopener" aria-label="Share by email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 5.5A2 2 0 0 1 3.5 3.5h17a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-17a2 2 0 0 1-2-2v-13Zm2.2.5 8.3 5.2L20.3 6H3.7Zm16.3 1.9-7.6 4.8a1 1 0 0 1-1.1 0L3.5 7.9V18.5h17V7.9Z"/></svg></a><button class="sh" data-sh="copy" type="button" aria-label="Copy link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 1H4a2 2 0 0 0-2 2v11h2V3h11V1Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h10v14Z"/></svg></button></div>
 </footer>
 
 <script>
@@ -501,14 +494,6 @@ input:focus,textarea:focus{outline:none;border-color:rgba(203,169,78,.7);box-sha
     fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}}).then(function(r){
       if(r.ok){var c=document.getElementById('form-card');c.innerHTML='<div style="text-align:center;padding:44px 12px"><div style="font-size:3rem;margin-bottom:12px">&#x2705;</div><h2 style="font-family:Frank Ruhl Libre,serif;font-size:1.6rem;color:#E7CE86;margin-bottom:8px">'+L.successTitle+'</h2><p style="color:#93A4BC">'+L.successBody+'</p></div>';}
       else{subBtn.textContent='⚠️';subBtn.disabled=false;}}).catch(function(){subBtn.textContent='⚠️';subBtn.disabled=false;});});
-  // share
-  var url=location.href,txt=L.shareText;
-  document.getElementById('share-whatsapp').href='https://wa.me/?text='+encodeURIComponent(txt+' '+url);
-  document.getElementById('share-facebook').href='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(url);
-  document.getElementById('share-x').href='https://twitter.com/intent/tweet?text='+encodeURIComponent(txt)+'&url='+encodeURIComponent(url);
-  document.getElementById('share-telegram').href='https://t.me/share/url?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(txt);
-  document.getElementById('share-copy').addEventListener('click',function(){navigator.clipboard&&navigator.clipboard.writeText(url).then(function(){var la=document.getElementById('t-copy-label');var o=la.textContent;la.textContent=L.copiedLabel;setTimeout(function(){la.textContent=o;},1500);});});
-  document.getElementById('share-instagram').addEventListener('click',function(){navigator.clipboard&&navigator.clipboard.writeText(url);window.open('https://www.instagram.com/','_blank');});
   updPhone();
 })();
 </script>
@@ -525,6 +510,18 @@ input:focus,textarea:focus{outline:none;border-color:rgba(203,169,78,.7);box-sha
     if(!(e.target.closest&&e.target.closest('.langpick-menu'))) closeAll(null);
   });
   document.addEventListener('keydown',function(e){ if(e.key==='Escape'||e.keyCode===27) closeAll(null); });
+})();
+</script>
+<script>
+(function(){
+  function wire(){
+    var url=encodeURIComponent(location.href), t=document.title.split(' | ')[0]||document.title, title=encodeURIComponent(t);
+    var m={whatsapp:'https://wa.me/?text='+title+'%20'+url, telegram:'https://t.me/share/url?url='+url+'&text='+title, x:'https://twitter.com/intent/tweet?url='+url+'&text='+title, facebook:'https://www.facebook.com/sharer/sharer.php?u='+url, email:'mailto:?subject='+title+'&body='+url};
+    document.querySelectorAll('.share .sh[data-sh]').forEach(function(el){var k=el.getAttribute('data-sh'); if(m[k]) el.setAttribute('href',m[k]);});
+    var cp=document.querySelector('.share .sh[data-sh="copy"]');
+    if(cp) cp.addEventListener('click',function(e){e.preventDefault(); if(navigator.clipboard) navigator.clipboard.writeText(location.href).then(function(){cp.classList.add('copied'); setTimeout(function(){cp.classList.remove('copied');},1500);});});
+  }
+  if(document.readyState!=='loading') wire(); else document.addEventListener('DOMContentLoaded',wire);
 })();
 </script>
 </body>
