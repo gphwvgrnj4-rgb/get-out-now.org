@@ -252,8 +252,6 @@ input:focus,textarea:focus{outline:none;border-color:rgba(203,169,78,.7);box-sha
 .share .sh svg{width:17px;height:17px;fill:currentColor}
 .share .sh:hover{background:var(--gold);color:var(--navy);border-color:var(--gold);transform:translateY(-2px)}
 .share .sh.copied{background:var(--gold);color:var(--navy);border-color:var(--gold)}
-
-#verify-row,#verify-confirm{display:none!important}
 </style>
 <link rel="canonical" href="https://get-out-now.org/ru/">
 <link rel="alternate" hreflang="en" href="https://get-out-now.org/">
@@ -380,10 +378,13 @@ input:focus,textarea:focus{outline:none;border-color:rgba(203,169,78,.7);box-sha
           <input type="text" id="first_name" name="first_name" placeholder="First Name" required />
         </div>
         <div class="form-group">
-          <label for="signup_email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg><span id="t-email-label">Электронная почта</span> <span class="req">*</span></label>
-          <input type="email" id="signup_email" name="email" placeholder="you@example.com" required />
+          <label for="phone_number"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg><span id="t-phone-label">Номер (WhatsApp)</span> <span class="req">*</span></label>
+          <div class="phone-wrap">
+            <span class="phone-prefix">+</span>
+            <input type="tel" id="phone_number" name="phone_number" placeholder="1 555 000 0000" required />
+          </div>
         </div>
-        <button type="submit" class="btn-submit" id="t-submit">🛟 Получить Помощь Сейчас -- Бесплатно</button>
+        <button type="submit" class="btn-submit" id="t-submit" disabled>🛟 Получить Помощь Сейчас -- Бесплатно</button>
       </form>
     </div>
   </div>
