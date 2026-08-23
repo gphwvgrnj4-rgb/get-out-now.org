@@ -252,7 +252,7 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:rgba(203,169,7
 .share .sh svg{width:17px;height:17px;fill:currentColor}
 .share .sh:hover{background:var(--gold);color:var(--navy);border-color:var(--gold);transform:translateY(-2px)}
 .share .sh.copied{background:var(--gold);color:var(--navy);border-color:var(--gold)}
-.free-life{background:var(--gold);color:var(--navy);padding:1rem 0;text-align:center;font-size:clamp(1rem,2.5vw,1.25rem)}.free-life strong{letter-spacing:.02em}.eligibility{background:#0d2038;color:var(--cream);padding:clamp(3rem,6vw,5rem) 0}.eligibility .wrap{max-width:760px}.eligibility h2{color:var(--gold-lt);font-size:clamp(1.7rem,4vw,2.5rem);margin:.35rem 0 1rem}.eligibility p,.eligibility li{color:#d8e0ec}.eligibility ul{padding-inline-start:1.3rem;margin:1.1rem 0}.eligibility li{margin:.5rem 0}.eligibility strong{color:var(--gold-lt)}</style>
+.free-life{background:var(--gold);color:var(--navy);padding:1rem 0;text-align:center;font-size:clamp(1rem,2.5vw,1.25rem)}.free-life strong{letter-spacing:.02em}.eligibility{background:#0d2038;color:var(--cream);padding:clamp(3rem,6vw,5rem) 0}.eligibility .wrap{max-width:760px}.eligibility h2{color:var(--gold-lt);font-size:clamp(1.7rem,4vw,2.5rem);margin:.35rem 0 1rem}.eligibility p,.eligibility li{color:#d8e0ec}.eligibility ul{padding-inline-start:1.3rem;margin:1.1rem 0}.eligibility li{margin:.5rem 0}.eligibility strong{color:var(--gold-lt)}.reply-channel{border:0;padding:0;margin:0 0 18px}.reply-channel legend{font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-lt);margin:0 0 8px}.reply-options{display:flex;gap:8px;flex-wrap:wrap}.reply-option{display:flex;align-items:center;gap:7px;padding:9px 12px;border:1px solid var(--border);border-radius:999px;cursor:pointer;color:var(--cream);font-size:.86rem}.reply-option:hover{border-color:var(--gold);background:rgba(203,169,78,.08)}.reply-option input{width:15px;height:15px;margin:0;accent-color:var(--gold);padding:0}.reply-option:has(input:checked){border-color:var(--gold);background:rgba(203,169,78,.16)}</style>
 <link rel="canonical" href="https://get-out-now.org/pt/">
 <link rel="alternate" hreflang="en" href="https://get-out-now.org/">
 <link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/">
@@ -376,17 +376,19 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:rgba(203,169,7
       <h2 id="t-title">Peça Ajuda Para Chegar à Segurança</h2>
       <p class="sub" id="t-title-sub">Dois campos para começar — seu nome e um número de mensageiro. Todo o resto vem passo a passo.</p>
       <p class="form-notice" id="t-notice">Veja como funciona: você nos envia seus dados de contato, ajudamos você a verificar sua elegibilidade sob a Lei do Retorno de Israel, e trabalhamos para organizar uma passagem segura — por ar, mar ou terra — para tirá-lo e trazê-lo para casa, para Israel. Melhor esforço apenas. Ajudamos o maior número de pessoas possível, o mais rápido que pudermos.</p>
-      
+
     </div>
     <div class="form-card" id="form-card">
       <form id="signup-form" name="gon-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks">
         <input type="hidden" name="form-name" value="gon-signup">
         <input type="hidden" name="lang" value="pt">
         <p hidden><label>Leave blank: <input name="bot-field"></label></p>
+
         <div class="form-group">
           <label for="first_name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span id="t-fname">Nome</span> <span class="req">*</span></label>
           <input type="text" id="first_name" name="first_name" placeholder="First Name" required />
         </div>
+        <fieldset class="reply-channel"><legend>Aplicativo preferido para resposta <span class="req">*</span></legend><div class="reply-options"><label class="reply-option" for="channel-whatsapp"><input id="channel-whatsapp" type="radio" name="contact_channel" value="WhatsApp" required><span>WhatsApp</span></label><label class="reply-option" for="channel-telegram"><input id="channel-telegram" type="radio" name="contact_channel" value="Telegram"><span>Telegram</span></label><label class="reply-option" for="channel-signal"><input id="channel-signal" type="radio" name="contact_channel" value="Signal"><span>Signal</span></label></div></fieldset>
         <div class="form-group">
           <label for="phone_number"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg><span id="t-phone-label">Número (WhatsApp)</span> <span class="req">*</span></label>
           <div class="phone-wrap">
@@ -398,7 +400,7 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:rgba(203,169,7
           <label for="email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>E-mail</span> <span class="req">*</span></label>
           <input type="email" id="email" name="email" placeholder="you@example.com" required />
         </div>
-        <div class="form-group reply-channel"><label for="contact_channel">Aplicativo preferido para resposta <span class="req">*</span></label><select id="contact_channel" name="contact_channel" required><option value="" selected disabled>Escolha uma</option><option value="WhatsApp">WhatsApp</option><option value="Telegram">Telegram</option><option value="Signal">Signal</option></select></div>
+
         <button type="submit" class="btn-submit" id="t-submit">🛟 Peça Ajuda Agora — É Grátis</button>
       </form>
     </div>
@@ -411,8 +413,8 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:rgba(203,169,7
     <h3 class="faq-title" id="t-faq-title">Perguntas Frequentes</h3>
     <div class="faq-tabs">
       <button type="button" class="faq-tab active" id="tab-applicants" data-tab="applicants"><span id="t-tab-applicants">Candidatos</span></button>
-      
-      
+
+
     </div>
     <div class="faq-panel" id="panel-applicants"><div class="faq-item"><button type="button" class="faq-question"><span>Isso é realmente gratuito?</span><span class="faq-icon">+</span></button><div class="faq-answer">Sim. A ajuda para chegar à segurança — não importa como seja feita — é oferecida sem custo para pessoas elegíveis.</div></div><div class="faq-item"><button type="button" class="faq-question"><span>E se os voos não forem possíveis?</span><span class="faq-icon">+</span></button><div class="faq-answer">Então analisamos todas as outras rotas: mar, travessias terrestres, casas seguras temporárias e coordenação com parceiros no terreno. O objetivo é a segurança, não um meio de transporte específico.</div></div><div class="faq-item"><button type="button" class="faq-question"><span>O que preciso fornecer para começar?</span><span class="faq-icon">+</span></button><div class="faq-answer">Apenas seu primeiro nome e um número ativo de WhatsApp, Telegram ou Signal. O resto é coletado passo a passo, conforme necessário.</div></div><div class="faq-item"><button type="button" class="faq-question"><span>E se eu ainda não tiver todos os meus documentos?</span><span class="faq-icon">+</span></button><div class="faq-answer">Você não será rejeitado por documentos ausentes ou pouco claros. Diremos exatamente o que falta e você poderá continuar enviando até resolver.</div></div><div class="faq-item"><button type="button" class="faq-question"><span>Posso parar e continuar depois?</span><span class="faq-icon">+</span></button><div class="faq-answer">Sim. Sua candidatura nunca expira -- continue exatamente de onde parou, a qualquer momento.</div></div><div class="faq-item"><button type="button" class="faq-question"><span>Minhas informações estão seguras?</span><span class="faq-icon">+</span></button><div class="faq-answer">Pedimos apenas duas coisas &mdash; um primeiro nome e uma forma de entrar em contato com você &mdash; e não guardamos mais nada. Sua mensagem chega à nossa pequena equipe de triagem por meio do nosso provedor de formulários; não mantemos um banco de dados de candidatos, e você pode nos pedir para excluir seus dados a qualquer momento.</div></div><div class="faq-item"><button type="button" class="faq-question"><span>E se um familiar não for elegível?</span><span class="faq-icon">+</span></button><div class="faq-answer">Cada pessoa é avaliada individualmente. A inelegibilidade de um parente nunca desqualifica o restante da família.</div></div></div>
   </div>
@@ -435,7 +437,7 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:rgba(203,169,7
           <label for="contact_email">Email</label>
           <input type="email" id="contact_email" name="email" placeholder="you@example.com" required />
         </div>
-        <div class="form-group reply-channel"><label for="contact_contact_channel">Aplicativo preferido para resposta <span class="req">*</span></label><select id="contact_contact_channel" name="contact_channel" required><option value="" selected disabled>Escolha uma</option><option value="WhatsApp">WhatsApp</option><option value="Telegram">Telegram</option><option value="Signal">Signal</option></select></div>
+        <fieldset class="reply-channel"><legend>Aplicativo preferido para resposta <span class="req">*</span></legend><div class="reply-options"><label class="reply-option" for="contact-channel-whatsapp"><input id="contact-channel-whatsapp" type="radio" name="contact_channel" value="WhatsApp" required><span>WhatsApp</span></label><label class="reply-option" for="contact-channel-telegram"><input id="contact-channel-telegram" type="radio" name="contact_channel" value="Telegram"><span>Telegram</span></label><label class="reply-option" for="contact-channel-signal"><input id="contact-channel-signal" type="radio" name="contact_channel" value="Signal"><span>Signal</span></label></div></fieldset>
         <div class="form-group">
           <label for="contact_message">Message</label>
           <textarea id="contact_message" name="message" placeholder="How can we help?" rows="4" required></textarea>
