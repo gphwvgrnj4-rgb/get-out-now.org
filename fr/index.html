@@ -127,11 +127,11 @@ label{display:flex;align-items:center;gap:.45rem;font-family:'Rubik',sans-serif;
   letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
 label svg{width:15px;height:15px;color:var(--gold-lt)}
 label .req{color:#E8A9A2}
-input[type=text],input[type=tel],input[type=email],textarea{
+input[type=text],input[type=tel],input[type=email],textarea,select{
   width:100%;background:rgba(255,255,255,.045);border:1px solid var(--border);border-radius:9px;
   padding:12px 14px;color:var(--cream);font-family:'Rubik',sans-serif;font-size:.98rem;transition:.2s;font-family:inherit}
 input::placeholder,textarea::placeholder{color:#4A5A70}
-input:focus,textarea:focus{outline:none;border-color:rgba(203,169,78,.7);box-shadow:0 0 0 3px rgba(203,169,78,.12);background:rgba(255,255,255,.06)}
+input:focus,textarea:focus,select:focus{outline:none;border-color:rgba(203,169,78,.7);box-shadow:0 0 0 3px rgba(203,169,78,.12);background:rgba(255,255,255,.06)}
 .phone-wrap{display:flex}
 .phone-prefix{background:rgba(203,169,78,.1);border:1px solid var(--border);border-inline-end:none;
   border-radius:9px 0 0 9px;padding:0 13px;color:var(--gold);display:flex;align-items:center}
@@ -394,6 +394,7 @@ input:focus,textarea:focus{outline:none;border-color:rgba(203,169,78,.7);box-sha
           <label for="email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>E-mail</span> <span class="req">*</span></label>
           <input type="email" id="email" name="email" placeholder="you@example.com" required />
         </div>
+        <div class="form-group reply-channel"><label for="contact_channel">Application préférée pour la réponse <span class="req">*</span></label><select id="contact_channel" name="contact_channel" required><option value="" selected disabled>Choisissez une</option><option value="WhatsApp">WhatsApp</option><option value="Telegram">Telegram</option><option value="Signal">Signal</option></select></div>
         <button type="submit" class="btn-submit" id="t-submit">🛟 Obtenez de l'aide maintenant -- c'est gratuit</button>
       </form>
     </div>
@@ -430,6 +431,7 @@ input:focus,textarea:focus{outline:none;border-color:rgba(203,169,78,.7);box-sha
           <label for="contact_email">Email</label>
           <input type="email" id="contact_email" name="email" placeholder="you@example.com" required />
         </div>
+        <div class="form-group reply-channel"><label for="contact_contact_channel">Application préférée pour la réponse <span class="req">*</span></label><select id="contact_contact_channel" name="contact_channel" required><option value="" selected disabled>Choisissez une</option><option value="WhatsApp">WhatsApp</option><option value="Telegram">Telegram</option><option value="Signal">Signal</option></select></div>
         <div class="form-group">
           <label for="contact_message">Message</label>
           <textarea id="contact_message" name="message" placeholder="How can we help?" rows="4" required></textarea>
