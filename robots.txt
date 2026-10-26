@@ -3,3 +3,6 @@ Allow: /
 Disallow: /.netlify/
 
 Sitemap: https://get-out-now.org/sitemap.xml
+Sitemap: https://get-out-now.org/feed.xml
+Sitemap: https://get-out-now.org/fr/feed.xml
+Sitemap: https://get-out-now.org/he/feed.xml

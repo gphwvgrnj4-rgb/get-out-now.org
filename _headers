@@ -1,2 +1,16 @@
 /ttv
   Content-Type: text/plain; charset=utf-8
+# bx-start
+/feed.xml
+  Content-Type: application/atom+xml; charset=utf-8
+/fr/feed.xml
+  Content-Type: application/atom+xml; charset=utf-8
+/he/feed.xml
+  Content-Type: application/atom+xml; charset=utf-8
+/assets/*.jpg
+  Cache-Control: public, max-age=604800
+/assets/*.png
+  Cache-Control: public, max-age=604800
+/favicon.*
+  Cache-Control: public, max-age=604800
+# bx-end
