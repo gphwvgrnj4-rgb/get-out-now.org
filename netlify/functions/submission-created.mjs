@@ -1,21 +1,40 @@
-// Fires automatically on every Netlify Forms submission (special filename).
-// Forwards the submission to the GON content-studio ingest so it lands in the
-// "Sign-ups" inbox for an AI-drafted reply. Zero deps (Node 18 global fetch).
-// The shared secret + URL come from env vars (repo is public — never inline them).
+// Fires automatically on every verified (non-spam) Netlify Forms submission (special filename).
+// 1) Petition signatures: recorded in Netlify Blobs (one key per submission id) so that
+//    petition-count can report a real count. They are NOT forwarded to the ingest below.
+// 2) Help/contact forms: forwarded to the GON content-studio ingest so they land in the
+//    "Sign-ups" inbox. The shared secret + URL come from env vars (repo is public — never inline them).
+import { getStore, connectLambda } from "@netlify/blobs";
+
 export const handler = async (event) => {
+  let payload = {};
+  try { payload = JSON.parse(event.body || "{}").payload || {}; } catch (e) {}
+  const data = payload.data || {};
+
+  if (payload.form_name === "petition") {
+    try {
+      connectLambda(event);
+      const store = getStore("petition-signatures");
+      // Store only what's needed to count/deduplicate; names stay in Netlify Forms.
+      await store.setJSON(`sig/${payload.id}`, { ts: payload.created_at, lang: data.lang || null, country: data.country || null });
+      console.log("petition signature recorded");
+    } catch (e) {
+      console.log("petition record failed:", String(e));
+    }
+    return { statusCode: 200, body: "ok" };
+  }
+
   try {
-    const { payload } = JSON.parse(event.body || "{}");
-    const data = (payload && payload.data) || {};
     const body = {
-      id: payload && payload.id,
-      ts: payload && payload.created_at,
+      id: payload.id,
+      ts: payload.created_at,
       site: "get-out-now.org",
-      form: payload && payload.form_name,
+      form: payload.form_name,
       fields: {
         first_name: data.first_name,
         name: data.name,
         phone_number: data.phone_number,
         email: data.email,
+        contact_channel: data.contact_channel,
         message: data.message,
         lang: data.lang,
       },

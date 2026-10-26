@@ -84,7 +84,8 @@
     ".gon-cb button{font-family:'Rubik',system-ui,sans-serif;font-size:.85rem;font-weight:700;border-radius:8px;padding:.6rem 1.15rem;cursor:pointer;border:1px solid transparent}" +
     ".gon-cb .dec{background:transparent;color:#CBA94E;border-color:rgba(203,169,78,.55)}" +
     ".gon-cb .acc{background:#CBA94E;color:#0B1A2E}" +
-    "[dir=rtl] .gon-cb .in{flex-direction:row-reverse}";
+    "[dir=rtl] .gon-cb .in{flex-direction:row-reverse}" +
+    "@media (max-width:600px){.gon-cb .in{padding:.55rem .8rem;gap:.45rem}.gon-cb p{font-size:.76rem;flex-basis:100%}.gon-cb button{padding:.4rem .9rem;font-size:.8rem}}";
   document.head.appendChild(css);
 
   function build() {
