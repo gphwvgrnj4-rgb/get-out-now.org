@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /.netlify/
 
 Sitemap: https://get-out-now.org/sitemap.xml
