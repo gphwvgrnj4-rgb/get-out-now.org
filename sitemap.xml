@@ -124,6 +124,14 @@
     <loc>https://get-out-now.org/projects</loc>
   </url>
   <url>
+    <loc>https://get-out-now.org/proof-of-jewish-status-for-aliyah</loc>
+    <lastmod>2026-10-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/proof-of-jewish-status-for-aliyah"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/proof-of-jewish-status-for-aliyah"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/proof-of-jewish-status-for-aliyah"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/proof-of-jewish-status-for-aliyah"/>
+  </url>
+  <url>
     <loc>https://get-out-now.org/terms</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/terms"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/terms"/>
@@ -330,6 +338,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/privacy"/>
   </url>
   <url>
+    <loc>https://get-out-now.org/fr/proof-of-jewish-status-for-aliyah</loc>
+    <lastmod>2026-10-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/proof-of-jewish-status-for-aliyah"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/proof-of-jewish-status-for-aliyah"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/proof-of-jewish-status-for-aliyah"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/proof-of-jewish-status-for-aliyah"/>
+  </url>
+  <url>
     <loc>https://get-out-now.org/fr/terms</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/terms"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/terms"/>
@@ -446,6 +462,14 @@
     <xhtml:link rel="alternate" hreflang="uk" href="https://get-out-now.org/uk/privacy"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/privacy"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/privacy"/>
+  </url>
+  <url>
+    <loc>https://get-out-now.org/he/proof-of-jewish-status-for-aliyah</loc>
+    <lastmod>2026-10-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-out-now.org/proof-of-jewish-status-for-aliyah"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://get-out-now.org/fr/proof-of-jewish-status-for-aliyah"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://get-out-now.org/he/proof-of-jewish-status-for-aliyah"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://get-out-now.org/proof-of-jewish-status-for-aliyah"/>
   </url>
   <url>
     <loc>https://get-out-now.org/he/terms</loc>
